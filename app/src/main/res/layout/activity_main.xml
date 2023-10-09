@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical"
+    tools:context="com.example.hocimplicitintent_phonesms.MainActivity"
+    android:weightSum="1">
+
+    <TextView
+        android:text="Nhập số phone:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:textSize="20sp"
+        android:textColor="@color/phone" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/edtPhone"
+        android:hint="Nhập số phone" />
+
+    <TextView
+        android:text="Nội dung tin nhắn:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:textColor="@color/sms" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/edtSms"
+        android:layout_weight="0.20"
+        android:text="Xin chào! Tôi đang test chức năng sms, xin lỗi đã làm phiền bạn nha"
+        android:textAlignment="viewStart"
+        android:gravity="top|left|center_vertical"
+        tools:ignore="RtlCompat" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:text="Dial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnDial"
+            android:layout_weight="1" />
+
+        <Button
+            android:text="Call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnCall"
+            android:layout_weight="1" />
+
+        <Button
+            android:text="Sms 1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnSms1"
+            android:layout_weight="1" />
+
+        <Button
+            android:text="sms 2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnSms2"
+            android:layout_weight="1" />
+    </LinearLayout>
+</LinearLayout>
